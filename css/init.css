@@ -1,0 +1,35 @@
+/*css样式初始化代码（公共代码）*/
+*{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+	-webkit-appearance:none;
+	appearance:none;
+	outline: none;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+b,strong,i{
+	font-style: normal;
+	font-weight: normal;
+}
+img{
+	display: block;
+}
+.clear::after{
+	content:"";
+	display: block;
+	clear: both;
+	height: 0px;
+	visibility: hidden;
+}
+
+.container{
+	width: 100%;
+	min-width: 320px;
+	max-width: 640px;
+	margin:0 auto;
+	background: #f0f0f0;
+}

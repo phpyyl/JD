@@ -1,0 +1,198 @@
+
+/*头部搜索区*/
+.header{
+	height: 40px;
+	background: #D8505C;
+	display: flex;
+}
+.header a.logo{
+	width: 62px;
+	padding-top:5px;
+	height: 35px;
+	background: url(../images/sprites.png) 2px -105px/210px 210px no-repeat;
+	background-clip:content-box;
+}
+.header form{
+	padding:0 3px;
+	flex-grow:1;
+	position: relative;
+}
+.header form input{
+	margin-top:4px;
+	height: 32px;
+	border-radius: 16px;
+	width: 100%;
+	padding-left:25px;
+	border:none;
+}
+.header form i.search_icon{
+	display: inline-block;
+	background: gold;
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	left:8px;
+	top:7px;
+	background: url(../images/sprites.png) -60px -105px/200px 200px no-repeat;
+}
+.header a.login{
+	width: 46px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color:white;
+}
+
+/*轮播图区域*/
+.banner{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.banner ul{
+	width: 1000%;
+	transform: translateX(-10%)
+}
+.banner ul li {
+	width: 10%;
+	float: left;
+}
+.banner ul li a{
+	width: 100%;
+	display: block;
+}
+.banner ul li a img{
+	width: 100%;
+	display: block;
+}
+.banner>div{
+	position: absolute;
+	width: 100%;
+	left:0;
+	bottom:5px;
+	text-align: center;
+}
+.banner>div>span{
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	border:1px solid gray;
+	border-radius: 50%;
+	background: white;
+}
+.banner>div>span.now{
+	background: red;
+}
+
+/*分类区域*/
+.categoary{
+	border-bottom:1px solid #ccc;
+	background: white;
+}
+.categoary ul{}
+.categoary ul li{
+	width: 25%;
+	float: left;
+	margin:10px 0;
+}
+.categoary ul li a{
+	display: block;
+	text-align: center;
+}
+.categoary ul li a img{
+	margin:0 auto;
+	width: 50%;
+}
+.categoary ul li a span{}
+
+/*秒杀区*/
+.miaosha{
+	margin:10px 5px;
+	background: white;
+}
+.miaosha .head{}
+.miaosha .head span{
+	display: inline-block;
+	vertical-align: middle;
+}
+.miaosha .head span.clock{
+	padding-left:10px;
+
+}
+.miaosha .head span.clock img{
+	height: 30px;
+}
+.miaosha .head span.zhangshang{
+	color:red;
+	line-height: 35px;
+}
+.miaosha .head span.time{}
+.miaosha .head span.time i{
+	background: black;
+	color:white;
+	padding:3px 4px;
+}
+.miaosha .head span.time i.maohao{
+	background: white;
+	color:black;
+	padding: 0;
+}
+.miaosha .head span.more{
+	line-height: 35px;
+	float:right;
+}
+.miaosha .list{}
+.miaosha .list ul{}
+.miaosha .list ul li{
+	float: left;
+	width: 33.333%;
+}
+.miaosha .list ul li a{
+	display: block;
+	margin:10px auto;
+	text-align: center;
+}
+.miaosha .list ul li a div{
+	border-left:solid 1px #ccc;
+	border-right:solid 1px #ccc;
+}
+.miaosha .list ul li a img{
+	width: 60%;
+	margin:0 auto;
+}
+
+
+/*京东超市区*/
+.chaoshi{
+	margin:10px 5px;
+	background: white;
+	border-bottom: solid 1px #ccc;
+}
+.chaoshi .head{
+	height: 40px;
+	line-height: 40px;
+	border-bottom: solid 1px #ccc;
+}
+.chaoshi .head i{
+	display: inline-block;
+	width: 30px;
+	height: 15px;
+	border-right:4px solid #D8505C;
+}
+.chaoshi .head a{
+	color:black;
+}
+.chaoshi .list{}
+.chaoshi .list a{
+	float: left;
+	width: 50%;
+}
+.chaoshi .list a img{
+	width: 96%;
+}
+.chaoshi .list a:first-child{
+	border-right:1px solid #ccc;
+}
+.chaoshi .list a:nth-child(2){
+	border-bottom:1px solid #ccc;
+}
